@@ -1,0 +1,101 @@
+<section class="contact-details">
+  <div class="navigation">
+    <p-button
+      icon="pi pi-arrow-left"
+      [text]="true"
+      class="custom-icon"
+      severity="secondary"
+      (click)="goBack()" />
+    <p-button
+      icon="pi pi-ellipsis-v"
+      [text]="true"
+      class="custom-icon"
+      severity="secondary"
+      (click)="menu.toggle($event)" />
+  </div>
+  <p-menu #menu [model]="items" [popup]="true" />
+
+  @if (contact) {
+    <div class="contact-details-wrapper">
+      <div class="contact-info">
+        <div class="contact-details-content">
+          <p class="contact-name heading">
+            {{ contact.firstName }} {{ contact.lastName }}
+          </p>
+
+          <p-divider />
+
+          <div class="contact-phone-numbers-wrapper">
+            @for (phoneNumber of contact.phoneNumbers; track phoneNumber) {
+              <div class="contact-phone primary-text">
+                <div class="contact-phone-number">
+                  <p>{{ phoneNumber.number }}</p>
+                  <p class="secondary-text">
+                    {{ phoneNumber.type }} |
+                    {{ phoneNumber.number | phoneCountry }}
+                  </p>
+                </div>
+
+                <div class="contact-phone-actions">
+                  <p-button
+                    icon="pi pi-phone"
+                    [rounded]="true"
+                    severity="success"
+                    size="small" />
+                  <p-button
+                    icon="pi pi-comment"
+                    [rounded]="true"
+                    size="small" />
+                </div>
+              </div>
+            }
+          </div>
+
+          <p-divider />
+
+          <p class="contact-email primary-text flex-column">
+            <span class="secondary-text">Email</span>{{ contact.email }}
+          </p>
+
+          <p-divider />
+
+          <div class="contact-additional-info">
+            <p class="flex-column primary-text">
+              <span class="secondary-text">Дата народження</span>
+              {{ contact.birthDate | date: 'dd.mm.yyyy' }}
+            </p>
+            <p class="flex-column primary-text">
+              <span class="secondary-text">Адреса</span>{{ contact.address }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-actions">
+        @if (isFavorite) {
+          <p-button
+            icon="pi pi-heart"
+            [iconPos]="'left'"
+            label="Прибрати з обраних"
+            severity="success"
+            (click)="removeFromFavorites(contact.id)"
+            [text]="true" />
+        } @else {
+          <p-button
+            icon="pi pi-heart"
+            [iconPos]="'left'"
+            label="Додати в обрані"
+            severity="secondary"
+            (click)="addToFavorites(contact)"
+            [text]="true" />
+        }
+        <p-button
+          label="Змінити контакт"
+          icon="pi pi-pencil"
+          [text]="true"
+          severity="secondary"
+          (click)="editContact(contact.id)" />
+      </div>
+    </div>
+  }
+</section>

@@ -13,15 +13,25 @@
     "sourceMap": true,
     "declaration": false,
     "experimentalDecorators": true,
+    "resolveJsonModule": true,
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"],
+    "paths": {
+      "@pages/*": ["./src/app/pages/*"],
+      "@styles/*": ["./src/app/styles/*"],
+      "@constants/*": ["./src/app/core/constants/*"],
+      "@interceptors/*": ["./src/app/core/interceptors/*"],
+      "@models/*": ["./src/app/core/models/*"],
+      "@services/*": ["./src/app/core/services/*"],
+      "@state/*": ["./src/app/core/state/*"],
+      "@pipes/*": ["./src/app/core/pipes/*"],
+      "@mock-data/*": ["./src/app/core/mock-data/*"],
+      "@environments/*": ["./src/environments/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

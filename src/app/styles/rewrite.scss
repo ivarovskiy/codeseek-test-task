@@ -1,0 +1,36 @@
+.p-tree {
+  border: none;
+  padding: 0;
+}
+
+.p-autocomplete {
+  width: 100%;
+}
+
+.custom-icon > .p-button.p-button-icon-only {
+  padding: 0;
+  width: max-content;
+}
+
+.p-calendar {
+  width: 100%;
+}
+
+.custom-input > .p-inputtext {
+  width: 170px;
+}
+
+.p-calendar .p-datepicker {
+  width: 100%;
+}
+
+@media(min-height: 768px) {
+  .custom-input > .p-inputtext {
+    width: 100%;
+  }
+
+
+  .p-calendar .p-datepicker {
+    width: fit-content;
+  }
+}

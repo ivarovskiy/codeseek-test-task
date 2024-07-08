@@ -1,0 +1,20 @@
+<section class="contact-list-wrapper">
+  <div class="contact-search-wrapper">
+    <app-search
+      [contacts]="contacts$ | asyncy"
+      (selectedContact)="selectedContact($event)"></app-search>
+  </div>
+  <div class="contact-tree-wrapper">
+    <app-contact-tree
+      [contacts]="contacts$ | asyncy"
+      (handleSelect)="selectedContact($event)"></app-contact-tree>
+  </div>
+
+  <div class="create-contact-button">
+    <p-button
+      icon="pi pi-plus"
+      [rounded]="true"
+      severity="success"
+      (click)="createContact()" />
+  </div>
+</section>

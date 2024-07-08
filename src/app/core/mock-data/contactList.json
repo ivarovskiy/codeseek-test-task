@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "firstName": "Іван",
+    "lastName": "Іванов",
+    "phoneNumbers": [
+      {
+        "type": "Основний",
+        "number": "+380501234567"
+      },
+      {
+        "type": "Робочий",
+        "number": "+380503456789"
+      }
+    ],
+    "birthDate": "1990-05-15",
+    "email": "ivan.ivanov@example.com",
+    "address": "вул. Київська, 10, Київ"
+  },
+  {
+    "id": 2,
+    "firstName": "Марія",
+    "lastName": "Петрівна",
+    "phoneNumbers": [
+      {
+        "type": "Основний",
+        "number": "+380502345678"
+      },
+      {
+        "type": "Домашній",
+        "number": "+380504567890"
+      }
+    ],
+    "birthDate": "1985-03-22",
+    "email": "maria.petrivna@example.com",
+    "address": "вул. Сумська, 20, Харків"
+  },
+  {
+    "id": 3,
+    "firstName": "Олег",
+    "lastName": "Сидоров",
+    "phoneNumbers": [
+      {
+        "type": "Основний",
+        "number": "+380503456789"
+      }
+    ],
+    "birthDate": "1992-07-10",
+    "email": "oleg.sidorov@example.com",
+    "address": "вул. Франка, 15, Одеса"
+  },
+  {
+    "id": 4,
+    "firstName": "Анна",
+    "lastName": "Михайлова",
+    "phoneNumbers": [
+      {
+        "type": "Основний",
+        "number": "+380504567890"
+      },
+      {
+        "type": "Робочий",
+        "number": "+380506789012"
+      },
+      {
+        "type": "Пейджер",
+        "number": "+380509876543"
+      }
+    ],
+    "birthDate": "1988-12-05",
+    "email": "anna.mikhailova@example.com",
+    "address": "пр. Перемоги, 25, Дніпро"
+  },
+  {
+    "id": 5,
+    "firstName": "Андрій",
+    "lastName": "Андрієнко",
+    "phoneNumbers": [
+      {
+        "type": "Основний",
+        "number": "+380505678901"
+      },
+      {
+        "type": "Робочий",
+        "number": "+380504567890"
+      },
+      {
+        "type": "Домашній",
+        "number": "+380507654321"
+      },
+      {
+        "type": "Пейджер",
+        "number": "+380506543210"
+      }
+    ],
+    "birthDate": "1995-11-25",
+    "email": "andriy.andrienko@example.com",
+    "address": "пр. Центральний, 5, Львів"
+  },
+  {
+    "id": 6,
+    "firstName": "Катерина",
+    "lastName": "Захарова",
+    "phoneNumbers": [
+      {
+        "type": "Основний",
+        "number": "+380506789012"
+      }
+    ],
+    "birthDate": "1993-04-18",
+    "email": "katerina.zakharova@example.com",
+    "address": "вул. Миру, 30, Запоріжжя"
+  },
+  {
+    "id": 7,
+    "firstName": "Василь",
+    "lastName": "Коваль",
+    "phoneNumbers": [
+      {
+        "type": "Основний",
+        "number": "+380507890123"
+      },
+      {
+        "type": "Робочий",
+        "number": "+380503210987"
+      }
+    ],
+    "birthDate": "1980-01-30",
+    "email": "vasil.koval@example.com",
+    "address": "вул. Лесі Українки, 8, Вінниця"
+  },
+  {
+    "id": 8,
+    "firstName": "Людмила",
+    "lastName": "Шевченко",
+    "phoneNumbers": [
+      {
+        "type": "Основний",
+        "number": "+380508901234"
+      }
+    ],
+    "birthDate": "1991-09-14",
+    "email": "liudmyla.shevchenko@example.com",
+    "address": "вул. Богдана Хмельницького, 12, Черкаси"
+  },
+  {
+    "id": 9,
+    "firstName": "Петро",
+    "lastName": "Гриценко",
+    "phoneNumbers": [
+      {
+        "type": "Основний",
+        "number": "+380509012345"
+      },
+      {
+        "type": "Домашній",
+        "number": "+380507654321"
+      }
+    ],
+    "birthDate": "1987-08-21",
+    "email": "petro.grytsenko@example.com",
+    "address": "вул. Пушкіна, 5, Полтава"
+  },
+  {
+    "id": 10,
+    "firstName": "Олексій",
+    "lastName": "Мельник",
+    "phoneNumbers": [
+      {
+        "type": "Основний",
+        "number": "+380509123456"
+      },
+      {
+        "type": "Робочий",
+        "number": "+380501234567"
+      }
+    ],
+    "birthDate": "1982-06-11",
+    "email": "oleksii.melnyk@example.com",
+    "address": "пр. Гагаріна, 15, Житомир"
+  }
+]

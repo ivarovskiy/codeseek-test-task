@@ -1,0 +1,95 @@
+<section class="contact-form">
+  <div class="contact-form-navigation">
+    <p-button
+      icon="pi pi-times"
+      severity="secondary"
+      [text]="true"
+      class="custom-icon"
+      (click)="cancel()" />
+    <p-button
+      icon="pi pi-check"
+      severity="secondary"
+      [text]="true"
+      class="custom-icon"
+      (click)="saveContact()" />
+  </div>
+  <form
+    [formGroup]="contactForm"
+    (ngSubmit)="saveContact()"
+    class="contact-form-content">
+    <div class="w-100">
+      <input
+        class="w-100"
+        pInputText
+        id="firstName"
+        formControlName="firstName"
+        placeholder="Ім'я" />
+    </div>
+
+    <div class="w-100">
+      <input
+        class="w-100"
+        pInputText
+        id="lastName"
+        formControlName="lastName"
+        placeholder="Прізвище" />
+    </div>
+
+    <div class="w-100">
+      <p-calendar
+        class="w-100"
+        formControlName="birthDate"
+        placeholder="День народження"
+        [showIcon]="true"
+        [showOnFocus]="false"
+        dateFormat="dd.mm.yy"
+        inputId="buttondisplay" />
+    </div>
+    <div class="w-100">
+      <input
+        class="w-100"
+        pInputText
+        id="email"
+        formControlName="email"
+        placeholder="Електронна пошта" />
+    </div>
+    <div class="w-100">
+      <input
+        class="w-100"
+        pInputText
+        id="address"
+        formControlName="address"
+        placeholder="Адреса" />
+    </div>
+    <div formArrayName="phoneNumbers" class="w-100">
+      <div
+        class="contact-form-number w-100"
+        *ngFor="let phoneNumber of phoneNumbers.controls; let i = index"
+        [formGroupName]="i">
+        <p-dropdown
+          formControlName="type"
+          [options]="phoneTypes"
+          placeholder="Select Type"
+          optionLabel="label"
+          optionValue="value"></p-dropdown>
+        <p-inputMask
+          class="w-100 custom-input"
+          mask="+(999)-99-999-99-99"
+          formControlName="number"
+          placeholder="(000)-00-000-00-00" />
+        <p-button
+          type="button"
+          (click)="removePhoneNumber(i)"
+          severity="danger"
+          icon="pi pi-trash"></p-button>
+      </div>
+      <p-button
+        class="flex-center"
+        type="button"
+        (click)="addPhoneNumber()"
+        [text]="true"
+        label="Додати номер телефону"
+        icon="pi pi-plus" />
+    </div>
+  </form>
+</section>

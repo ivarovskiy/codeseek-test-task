@@ -1,0 +1,7 @@
+<div class="contact-tree">
+  <p-tree
+    [value]="treeNodes"
+    selectionMode="single"
+    [(selection)]="selectedContact"
+    (onNodeSelect)="onNodeSelect($event)" />
+</div>

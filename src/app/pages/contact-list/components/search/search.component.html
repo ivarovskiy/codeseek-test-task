@@ -1,0 +1,10 @@
+<form [formGroup]="formGroup">
+  <p-autoComplete
+    [placeholder]="numberOfContacts"
+    formControlName="selectedContact"
+    [suggestions]="filteredContacts"
+    (completeMethod)="filterContact($event)"
+    field="fullName"
+    [dropdown]="true"
+    dropdownIcon="pi pi-search" />
+</form>

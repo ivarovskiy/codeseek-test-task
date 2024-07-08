@@ -1,0 +1,90 @@
+.contact-details {
+   padding: 16px;
+   height: 100%;
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .contact-phone-numbers-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .contact-details-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .contact-additional-info {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+  }
+
+  .contact-phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-number {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    &-actions {
+      display: flex;
+      gap: 14px;
+    }
+  }
+  
+  .contact-actions {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.primary-text {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.secondary-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #3b3a3a;
+}
+
+p {
+  margin: 0;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-details-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

@@ -1,0 +1,15 @@
+.contact-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    // align-items: center;
+    padding: 16px;
+
+    position: relative;
+}
+
+.create-contact-button {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+}
